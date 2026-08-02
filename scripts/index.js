@@ -27,6 +27,50 @@ const initialCards = [
   },
 ];
 
+const editButton = document.querySelector(".profile__edit-button");
+const editPopup = document.querySelector("#edit-popup");
+const closeButton = editPopup.querySelector(".popup__close");
+
+const profileTitle = document.querySelector(".profile__title");
+const profileDescription = document.querySelector(".profile__description");
+
+const nameInput = document.querySelector(".popup__input_type_name");
+const descriptionInput = document.querySelector(
+  ".popup__input_type_description"
+);
+
+const editForm = document.querySelector("#edit-profile-form");
+
+function openPopup() {
+  editPopup.classList.add("popup_is-opened");
+}
+
+function closePopup() {
+  editPopup.classList.remove("popup_is-opened");
+}
+
+editButton.addEventListener("click", () => {
+  nameInput.value = profileTitle.textContent;
+  descriptionInput.value = profileDescription.textContent;
+
+  openPopup();
+});
+
+closeButton.addEventListener("click", () => {
+  closePopup();
+});
+
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+
+  profileTitle.textContent = nameInput.value;
+  profileDescription.textContent = descriptionInput.value;
+
+  closePopup();
+}
+
+editForm.addEventListener("submit", handleProfileFormSubmit);
+
 initialCards.forEach((card) => {
   console.log(card.name);
 });
