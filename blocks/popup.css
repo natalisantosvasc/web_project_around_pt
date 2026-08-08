@@ -156,22 +156,24 @@
     max-width: 75vw;
     padding: 0;
   }
-  }
 
   .popup__input_type_error {
-    border-color: #ff0000;
+   border-color: #ff0000;
   }
 
   .popup__error {
-    display: block;
-    min-height: 17px;
-    margin-top: 4px;
-    font-size: 12px;
-    color: #ff0000;
-  }
+   display: block;
+   min-height: 17px;
+   margin-top: 4px;
+   font-size: 12px;
+   color: #ff0000;
+ }
 
-  .popup__button_disabled {
-    background-color: #dedede;
-    color: #8b8b8b;
-    cursor: not-allowed;
-  }
+ .popup__button {
+  transition: opacity 0.2s;
+ }
+
+.popup__button_disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
