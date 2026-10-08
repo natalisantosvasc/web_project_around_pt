@@ -19,3 +19,7 @@ Around the U.S. é uma página interativa e responsiva onde é possível editar 
 - CSS3 (Flexbox e media queries)
 - JavaScript
 - Metodologia BEM
+
+## GitHub Pages
+
+https://natalisantosvasc.github.io/web_project_around_pt/
