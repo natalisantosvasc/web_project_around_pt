@@ -22,4 +22,4 @@ Around the U.S. é uma página interativa e responsiva onde é possível editar 
 
 ## GitHub Pages
 
-https://natalisantosvasc.github.io/web_project_around_pt/
+https://natalisantosvasc.github.io/web_project_around_pt/src/
