@@ -42,9 +42,9 @@ const editFormValidator = new FormValidator(validationConfig, editForm);
 const newCardFormValidator = new FormValidator(validationConfig, newCardForm);
 const avatarFormValidator = new FormValidator(validationConfig, avatarForm);
 
-editFormValidator.setEventListeners();
-newCardFormValidator.setEventListeners();
-avatarFormValidator.setEventListeners();
+editFormValidator.enableValidation();
+newCardFormValidator.enableValidation();
+avatarFormValidator.enableValidation();
 
 // --- Perfil ---
 const userInfo = new UserInfo({
