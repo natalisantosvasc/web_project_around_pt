@@ -6,9 +6,12 @@ Around the U.S. é uma página interativa e responsiva onde é possível editar 
 
 ## Funcionalidades
 
-- Editar o nome e a descrição do perfil
+- Carregar as informações do perfil e os cartões a partir do servidor
+- Editar o nome, a descrição e a foto do perfil, salvando tudo no servidor
 - Adicionar novos cartões com título e link de imagem
-- Curtir e excluir cartões
+- Curtir e descurtir cartões, com o estado salvo no servidor
+- Excluir os próprios cartões, com um pop-up de confirmação antes da exclusão
+- Mostrar "Salvando..." no botão enquanto os dados são enviados
 - Abrir a imagem do cartão em tamanho ampliado
 - Validar os formulários, com mensagens de erro e botão de envio desativado enquanto houver campos inválidos
 - Fechar os popups pelo botão X, com a tecla ESC ou clicando fora deles
@@ -17,7 +20,8 @@ Around the U.S. é uma página interativa e responsiva onde é possível editar 
 
 - HTML5
 - CSS3 (Flexbox e media queries)
-- JavaScript
+- JavaScript (classes ES6, módulos, herança)
+- API REST com `fetch` e Promises (`Promise.all`)
 - Metodologia BEM
 
 ## GitHub Pages
